@@ -1,8 +1,6 @@
 package lesson_1.clients;
 
-import javax.print.attribute.DateTimeSyntax;
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Animal {
     protected String name;
@@ -64,16 +62,32 @@ public class Animal {
         System.out.println(getType() + " eat :)");
     }
 
+    protected void toGo() {
+        System.out.println(getType()  + " going!");
+    }
+
+    protected void fly() {
+        System.out.println(getType() + " flying =)");
+    }
+    protected void swim() {
+        System.out.println(getType() + " swimming! Blop-blop");
+    }
+
     public void liveCycle() {
         wakeUp();
         wakeUp(5);
         eat();
+        toGo();
+        fly();
+        swim();
         sleep();
+        System.out.println("--------------");
     }
 
     public String getType(){
         return getClass().getSimpleName();
     }
+
 
     @Override
     public String toString() {

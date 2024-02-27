@@ -11,4 +11,9 @@ public class Lion extends Animal{
     public Lion() {
         super();
     }
+
+    @Override
+    protected void fly() {
+        System.out.println(getType() + " Are you crazy? I can't fly");
+    }
 }

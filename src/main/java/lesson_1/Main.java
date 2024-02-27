@@ -1,8 +1,6 @@
 package lesson_1;
 
-import lesson_1.clients.Animal;
-import lesson_1.clients.Lion;
-import lesson_1.clients.Owner;
+import lesson_1.clients.*;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -24,5 +22,19 @@ public class Main {
         animalList.add(leva);
         animalList.add(leva2);
         System.out.println(animalList);
+        System.out.println("------------------------------------");
+        //------------------------------------------ #на уроке
+
+        Walrus morzh = new Walrus();
+        Cheetah gepard = new Cheetah();
+        Griffin grifon = new Griffin();
+        Penguin pingvin = new Penguin();
+
+        morzh.liveCycle();
+        gepard.liveCycle();
+        grifon.liveCycle();
+        pingvin.liveCycle();
+
+
     }
 }
